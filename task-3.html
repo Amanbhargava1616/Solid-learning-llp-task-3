@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blooming Sakura - Restaurant</title>
+
+    <!-- Title image -->
+    <link rel="shortcut icon" href="sakura-flower-image.jpg" class="title-image">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- Java script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="task-3.css">
+
+    <!-- Font awesome ( icons ) -->
+    <script src="https://kit.fontawesome.com/1bfe00020e.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- font-family: 'Sedgwick Ave', cursive; -->
+        <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Padauk', sans-serif; -->
+        <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Raleway', sans-serif; -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="container">
+
+        <!-- Upper row ( blooming sakura { heading } , location-tag , search-bar , contact-button )-->
+        <div class="upper-row-header-div ">
+            
+            <!-- name -->
+            <div class="name-div">
+                Blooming Sakura
+            </div>
+    
+            <!-- location link -->
+            <div class="location-link-div">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i>Blooming Sakura</a>
+            </div>
+
+            <!-- Search bar -->
+                <form action="#" method="get" class="navigation-search search-bar-div">
+                    <input type="text" class="navigation-search-input" placeholder="Search for cuisine or a dish">
+                        <button  class="navigation-search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                </form>
+    
+            <!-- navbar Contact -->
+            <div class="dropdown navbar-contact-div">
+                <button class="contact-button dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </button>
+                <ul class="dropdown-menu ul-element" aria-labelledby="dropdownMenuButton1">
+                  <li class="Call-item"><a href="#">Call <i class="fas fa-phone-alt" style="user-select: auto;"></i></a></li>
+                  <li class="mail-item"><a href="#">Mail <i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- lower row header ( choice of dinning , menu )-->
+        <div class="lower-row-header-div">
+
+            <!-- dineout , delivery , nightlife -->
+            <div class="part1">
+                
+                <!-- dineout div -->
+                <div class="dineout-div lower-div">
+                    <a href="#" target="_self" class="dineout-link lower-header-link"><img src="cutlery-image.jpg" alt="cutlery-image" class="header-image dineout-image"> <span class="dineout-text">Dineout</span></a>
+                </div>
+    
+                <!-- delivery div -->
+                <div class="delivery-div lower-div">
+                    <a href="#" target="_self" class="delivery-link lower-header-link"><img src="food-delivery-image.jpg" alt="delivery-image" class="header-image delivery-image"> <span class="delivery-text">Delivery</span></a>
+                </div>
+    
+                <!-- nightlife div -->
+                <div class="nightlife-div lower-div">
+                    <a href="#" target="_self" class="nightlife-link lower-header-link"><img src="night-life-image.jpg" alt="nightlife-image" class="header-image nightlife-image"> <span class="nightlife-text">Nightlife</span></a>
+                </div>
+
+            </div>
+
+            <!-- Menu part ( collapse button )-->
+            <div class="menu-collapse">
+                
+                <button class="menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    MENU 
+                  </button>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <img src="demo-menu-image.jpg" alt="" class="menu-image-tag img-fluid">
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    
+    <!-- picture section -->
+    <div class="picture-section container">
+
+        <!-- biggest picture -->
+        <div class="first-image-div picture-section-div">
+            <img src="demo-image-1.jpg" alt="first picture" class="first-image img-fluid picture-section-img">
+        </div>
+
+        <!-- picture grid -->
+        <div class="picture-grid-div">
+            
+            <div class="second-image-div picture-section-div">
+                <img src="demo-image-2.jpg" alt="second image" class="second-image img-fluid picture-section-img">
+            </div>
+
+            <div class="gallery-link-div">
+                <img src="Sakura-image.jpg" alt="fourth image" class="fourth-image img-fluid">
+                <div class="gallery-text"><a href="#">Photos</a></div>
+            </div>
+
+            <div class="third-image-div picture-section-div">
+                <img src="demo-image-3.jpg" alt="third image" class="third-image img-fluid picture-section-img">
+            </div>
+            
+            <!-- add image div section-->
+            <div class="add-image-div">
+                <form action="" method="get" class="add-image-form">
+
+                    <label for="add-image" class="add-image-label">Add image</label>
+                    <input type="file" name="add-image-input" id="add-image" class="add-image-input" multiple>
+                    <div class="add-image-buttons">
+                        <button type="reset" class="add-image-reset">Remove</button>
+                        <button type="submit" class="add-image-submit">Post images</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- whole body -->
+    <div class="whole-body container">
+
+        <!-- intro section -->
+        <div class="intro-section-div container">
+
+            <!--main heading ( name , review )-->
+            <div class="intro-body-main-div">
+
+                <!-- main heading name -->
+                <h1 class="main-heading-name">Blooming Sakura</h1>
+
+                <!-- review div -->
+                <div class="review-div">
+
+                    <!-- delivery review -->
+                    <a href="#" class="review-link">
+                        <div class="inner-review-div">
+                            <!-- star box -->
+                            <div class="star-rating-div">4.6 <i class="fas fa-star"></i></div>
+
+                            <!-- text box -->
+                            <div class="review-text-box">
+                                
+                                <div class="review-text-part-1">478</div>
+                                <div class="review-text-part-2">Dining Reviews</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                   <!-- delivery review -->
+                   <a href="#" class="review-link">
+                    <div class="inner-review-div">
+                        <!-- star box -->
+                        <div class="star-rating-div">4.2 <i class="fas fa-star"></i></div>
+
+                        <!-- text box -->
+                        <div class="review-text-box">
+                            
+                            <div class="review-text-part-1">381</div>
+                            <div class="review-text-part-2">Delivery Reviews</div>
+
+                        </div>
+                    </div>
+                   </a>
+
+                    <!-- nightlife review -->
+                   <a href="#" class="review-link">
+                    <div class="inner-review-div">
+                        <!-- star box -->
+                        <div class="star-rating-div">4.4 <i class="fas fa-star"></i></div>
+
+                        <!-- text box -->
+                        <div class="review-text-box">
+                            
+                            <div class="review-text-part-1">253</div>
+                            <div class="review-text-part-2">Nightlife Reviews</div>
+
+                        </div>
+                    </div>
+                   </a>
+
+                </div>
+
+            </div>
+
+            <!-- sub heading -->
+            <div class="sub-heading-intro-section-div">
+
+                <h5 class="sub-heading-intro-section-text">Japan,BBQ <br> Oshino Hakkai, Mount Fuji</h5>
+
+                <img src="grill.jpg" alt="" class="sub-heading-intro-section-image img-fluid">
+
+            </div>
+            
+            <!-- opening hours -->
+            <div class="opening-hours-div">
+                <h5 class="opening-hour-text"> Opening hours : &nbsp;</h5>
+                
+                <h6 class="opening-days"> Mon - Sun  </h6>
+                
+                <h6 class="opening-hour">(8am-11pm)</h6>
+            </div>
+            
+            <!-- add review , direction -->
+            <div class="bottom-buttons">
+
+                <!-- add review -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="add-review-link bottom-buttons-link">
+
+                    <div class="add-review-div bottom-buttons-div">
+                        <i class="far fa-star"></i> Add Review
+                    </div>
+
+                </a>
+
+                <!-- direction-->
+                <a href="http://www.google.com/maps/dir/?api=1&amp;destination=0,0" target="_blank" rel="noopener noreferrer" class="direction-link bottom-buttons-link">
+
+                    <div class="direction-div bottom-buttons-div">
+                        <i class="fas fa-directions"></i> Direction
+                    </div>
+                    
+                </a>
+
+            </div>
+
+            <hr>
+
+        </div>
+
+        <!-- main body -->
+        <div class="main-body-div container">
+
+            <!-- side div -->
+            <div class="container aside">
+                
+                <aside>
+                    <!-- call -->
+                    <div class="aside-call-div">
+                        <h3>Call</h3>
+                        <a href="tel:+9314077000">+9193140xxxxx</a>
+                        <br>
+                        <a href="tel:+9314077000">+9197821xxxxx</a>
+                    </div>
+    
+                    <!-- direction -->
+                    <div class="aside-direction">
+                        <h3>Direction</h3>
+                        
+                        <a href="http://www.google.com/maps/dir/?api=1&amp;destination=0,0" target="_blank" rel="noopener noreferrer"> <img src="location-map-image.jpg" alt="map-image" class= "img-fluid location-map-img"></a>
+    
+                    </div>
+                    
+                </aside>
+            </div>
+
+            <!-- overview content -->
+            <div class="text-area container">
+
+                <!-- menu section -->
+                <div class="menu-section-div">
+                    
+                    <!-- heading -->
+                    <div class="menu-section-heading heading1">
+                        Menu
+                    </div>
+
+                    <br>
+    
+                    <!-- menu image section-->
+                    <div class="menu-section-image-div">
+    
+                        <div class="food-menu-image menu-img">
+                            <img src="demo-image-1.jpg" alt="food-menu-image" class="img-Fluid">
+                            <p>Food Menu </p>
+                        </div>
+        
+                        <div class="beverages-menu-image menu-img">
+                            <img src="demo-image-2.jpg" alt="beverages-menu-image" class="img-fluid">
+                            <p>Beverages Menu</p>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                <!-- Cuisines section -->
+                <div class="cuisines-section-div">
+
+                    <!-- heading -->
+                    <div class="cuisine-section-heading heading1">
+                        Cuisines
+                    </div>
+
+                    <br>
+
+                    <!-- cuisien buttons -->
+                    <div class="cuisine-button-div">
+                        
+                        <!-- bento -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="cuisine-link-tag"><button class="cuisine-button">Bento</button></a>
+    
+                        <!-- ramen -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="cuisine-link-tag"><button class="cuisine-button">Ramen</button></a>
+    
+                        <!-- buffet -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="cuisine-link-tag"><button class="cuisine-button">Buffet</button></a>
+
+                    </div>
+
+                </div>
+
+                <!-- More info -->
+                <div class="More-info-div">
+
+                    <div class="more-info-heading-div heading1">
+                        More Info
+                    </div>
+
+                    <div class="section-div ">
+                        
+                        <!-- right section -->
+                        <ul class="more-info-ul ">
+                            <li><i class="fa fa-check-circle"></i> Home Delivery</li>
+                            <li><i class="fa fa-check-circle"></i> Takeaway available</li>
+                            <li><i class="fa fa-check-circle"></i> Open sitting</li>
+                        </ul>
+                        
+                        <!-- left section -->
+                        <ul class="more-info-ul">
+                            <li><i class='fa fa-check-circle'></i> Hot spring </li>
+                            <li><i class='fa fa-check-circle'></i> Wifi</li>
+                            <li><i class='fa fa-check-circle'></i> Tradiitonal bevarages</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- rating-->
+                <div class="rate-your-experince-div">
+                    
+                    <!-- heading -->
+                    <div class="rate-your-experince-heading heading1">
+                        Rate your experince for 
+                    </div>
+
+                    <!-- form section -->
+                    <form action="#" method="get" class="rate-your-experince-form">
+
+                        <!-- delivery or dinning choice -->
+                        <div class="choice-section choice-1">
+                            
+                            <!-- dinning section -->
+                            <div>
+    
+                                <input type="radio" name="rate-your-experince-radio" id="dinning-radio">
+                                <label for="dinning-radio">Dinning</label>
+    
+                            </div>
+    
+                            <!-- Delivery section -->
+                            <div>
+    
+                                <input type="radio" name="rate-your-experince-radio" id="delivery-radio">
+                                <label for="delivery-radio">Delivery</label>
+    
+                            </div>
+
+                            <!-- nightlife section -->
+                            <div>
+    
+                                <input type="radio" name="rate-your-experince-radio" id="nightlife-radio">
+                                <label for="nightlife-radio">Nightlife</label>
+    
+                            </div>
+
+                        </div>
+
+                        <!-- star rating choice -->
+                        <div class="choice-section choice-2">
+
+                            <input type="radio" name="star-choice" id="1-star">
+                            <label for="1-star"> 1 <i class="fas fa-star"></i> </label>
+
+                            <input type="radio" name="star-choice" id="2-star">
+                            <label for="2-star"> 2 <i class="fas fa-star"></i> </label>
+
+                            <input type="radio" name="star-choice" id="3-star">
+                            <label for="3-star"> 3 <i class="fas fa-star"></i> </label>
+
+                            <input type="radio" name="star-choice" id="4-star">
+                            <label for="4-star"> 4 <i class="fas fa-star"></i> </label>
+
+                            <input type="radio" name="star-choice" id="5-star">
+                            <label for="5-star"> 5 <i class="fas fa-star"></i> </label>
+
+                        </div>
+
+                        <!-- submit button -->
+                        <button type="submit">Post Rating</button>
+
+                    </form>
+
+                </div>
+
+                <!-- Review highlights -->
+  
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- footer-->
+    <footer class="container-fluid">
+
+        <!-- Upper footer section-->
+        <div class="footer-upper-section container">
+            
+            <!-- social link section { instagram , facebook , twitter }-->
+            <div class="footer-social-link-section">
+
+                <div class="icon-div instagram-div"><a href="#" class="instagram-link icon-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></div>
+                <div class="icon-div facebook-div "><a href="#" class="facebook-link icon-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></div>
+                <div class="icon-div twitter-div "><a href="#" class="twitter-link icon-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></div>                
+
+            </div>
+
+            <!-- know more button -->
+            <button class="footer-about-us-button"><a href="#" target="_blank" rel="noopener noreferrer">Know more</a><i class="fa fa-arrow-right"></i></button>
+            
+        </div>
+        
+        <hr class="container">
+
+        <!-- middle footer section -->
+        <div class="footer-middle-section container">
+
+            <!-- for foodies div -->
+            <div class="for-foodies-div block">
+
+                <div class="for-foodies-heading heading2">For foodies</div>
+
+                <div class="footer-list">
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">Code of conduct</a>
+                    <br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Blogger help</a>
+                    <br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Community</a>
+
+                </div>
+
+            </div>
+
+            <!-- for you div -->
+            <div class="for-you-div block">
+
+                <div class="for-you-heading heading2">For you</div>
+
+                <div class="footer-list">
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    <br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Terms and condition</a>
+                    <br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Location</a>
+                    <br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Festive offers</a>
+
+                </div>
+                
+            </div>
+
+            <!-- app download link -->
+            <div class="footer-middle-section-link-div block">
+
+                <!-- heading -->
+                <div class="heading2">Download App</div>
+
+                <!-- Play store -->
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="google-play-store-image.jpg" alt="google-play-store-image"></a>
+
+                <!-- app store -->
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="app-store-image.jpg" alt="app-store-image"></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
+
+
+    
